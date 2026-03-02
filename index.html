@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBA Player Props & Stats</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+    <h1>NBA Player Props & Stats</h1>
+    <p>Track points, rebounds, assists, and prop hit rates!</p>
+</header>
+
+<section class="filter-section">
+    <label for="playerSelect">Select Player:</label>
+    <select id="playerSelect"></select>
+</section>
+
+<section class="table-section">
+    <h2>Player Stats & Props</h2>
+    <table id="statsTable">
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Team</th>
+                <th>Avg Points</th>
+                <th>Avg Rebounds</th>
+                <th>Avg Assists</th>
+                <th>Points Hit Rate (%)</th>
+                <th>Rebounds Hit Rate (%)</th>
+                <th>Assists Hit Rate (%)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</section>
+
+<section class="chart-section">
+    <h2>Last 5 Games Stats</h2>
+    <canvas id="statsChart"></canvas>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
